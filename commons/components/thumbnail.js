@@ -15,7 +15,8 @@ export default (props) => {
                 })
             }
             </p>
-            <p><a href="#" className="btn btn-primary" role="button">Demo</a> <a href="#" className="btn btn-default" role="button">View Details</a></p>
+
+            {(!props.buttons)? "": props.buttons}
           </div>
         </div>
       </div>

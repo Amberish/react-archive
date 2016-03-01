@@ -7,7 +7,8 @@ export default [
     id: 1,
     name: "Video Browser",
     image: "image/image1.jpg",
-    content: "In this example you will learn to create a small app like youtube, utilizing youtube API integration."
+    content: "In this example you will learn to create a small app like youtube, utilizing youtube API integration.",
+    demo_link: "/video-browser"
     //truncLen: 120
   },
   {

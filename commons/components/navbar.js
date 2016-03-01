@@ -1,7 +1,6 @@
 import React from "react";
-import { PROJECT_CONFIG } from "../project_info";
 
-export default () => {
+export default (props) => {
   return (
     <nav className="navbar navbar-default">
       <div className="container-fluid">
@@ -12,7 +11,7 @@ export default () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand" href="#">{ PROJECT_CONFIG.name }</a>
+          <a className="navbar-brand" href="#">{ props.heading }</a>
         </div>
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         </div>
