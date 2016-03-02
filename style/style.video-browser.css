@@ -18,17 +18,17 @@
 	border-radius: 4px;
 }
 
-.list-group-item {
+.list-group-item.video-browser {
 	cursor:pointer;
 	font-size: 12px;
 	height: 100px;
 }
 
-.list-group-item:hover{
+.list-group-item.video-browser:hover{
 	background-color: #eee;
 }
 
-.list-group-item .media-object{
+.list-group-item.video-browser .media-object{
 	margin: 0px;
 	height: 80px;
 }

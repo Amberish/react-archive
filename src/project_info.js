@@ -8,14 +8,15 @@ export default [
     name: "Video Browser",
     image: "image/image1.png",
     content: "In this example you will learn to create a small app like youtube, utilizing youtube API integration.",
-    demo_link: "/video-browser"
+    demo_link: "video-browser"
     //truncLen: 120
   },
   {
     id: 2,
     name: "Library App",
     image: "image/image1.png",
-    content: "In this example you will learn to create a library which display books listing and view content of selected book."
+    content: "In this example you will learn to create a library which display books listing and view content of selected book.",
+    demo_link: "library-app"
   },
   {
     id: 3,
