@@ -1,5 +1,6 @@
 import _ from "lodash";
 import React, { Component } from "react";
+import { Link } from "react-router";
 import YTSearch from "youtube-api-search";
 import NavBar from "../../commons/components/navbar";
 import SearchBar from "./components/search_bar";
@@ -29,11 +30,23 @@ class VideoBrowser extends Component {
     });
   }
 
+  createSubmenu() {
+    return (
+      <ul className="nav navbar-nav navbar-right">
+        <li>
+          <Link to="/" >
+            <button className="btn btn-danger">Back to home</button>
+          </Link>
+        </li>
+      </ul>
+    );
+  }
+
   render() {
     const videoSearch = _.debounce(term => {this.videoSearch(term)}, 300);
     return (
       <div>
-        <NavBar heading="Youtube App Demo"/>
+        <NavBar heading="Youtube App Demo" submenu={this.createSubmenu()}/>
         <div className="container">
           <SearchBar onSearchTermChange={videoSearch}/>
           <br/>

@@ -24,10 +24,22 @@ class Index extends Component {
     });
   }
 
+  createSubmenu() {
+    return (
+      <ul className="nav navbar-nav navbar-right">
+        <li>
+          <Link to="about-me" >
+            <button className="btn btn-primary">About Me</button>
+          </Link>
+        </li>
+      </ul>
+    )
+  }
+
   render() {
     return (
       <div>
-        <NavBar heading={PROJECT_CONFIG.name}/>
+        <NavBar heading={PROJECT_CONFIG.name} submenu={this.createSubmenu()}/>
         <div className="container">
           <div className="row">
           { this.renderThumbnails() }
