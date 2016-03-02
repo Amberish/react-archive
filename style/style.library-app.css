@@ -1,0 +1,7 @@
+.library-app-list{
+  cursor: pointer;
+}
+
+.library-app-list:hover{
+  background: #dddddd;
+}
