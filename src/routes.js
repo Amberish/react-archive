@@ -5,6 +5,7 @@ import Index from "./components/index";
 import AboutMe from "./components/about_me";
 import VideoBrowser from "../projects/video-browser";
 import LibraryApp from "../projects/library-app";
+import WeatherApp from "../projects/weather-app";
 
 export default (
   <Route path="/" component={App} >
@@ -12,5 +13,6 @@ export default (
     <Route path="about-me" component={AboutMe} />
     <Route path="video-browser" component={VideoBrowser} />
     <Route path="library-app" component={LibraryApp} />
+    <Route path="weather-app" component={WeatherApp} />
   </Route>
 );
